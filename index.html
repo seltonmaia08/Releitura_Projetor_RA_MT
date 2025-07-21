@@ -17,7 +17,7 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene> -->
-    <video id="video" src="assets/animation.mp4" autoplay loop muted playsinline webkit-playsinline crossorigin="anonymous"
+<!--     <video id="video" src="assets/animation.mp4" autoplay loop muted playsinline webkit-playsinline crossorigin="anonymous"
         style="display: none;"> </video>
 
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
@@ -33,7 +33,16 @@
 
         <a-entity camera></a-entity>
     </a-scene>
+ -->
 
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+        <a-assets>
+            <a_asset-item id="cube" src="Magic_cube_v01.glb"></a_asset-item>
+        </a-assets>
+          <a-marker type="pattern" url="pattern-Ativo 1.patt">
+            <a-entity id="cubo" gltf-model="#cube"></a-entity>
+        </a-marker>
+    </a-scene>
 
 </body>
 
